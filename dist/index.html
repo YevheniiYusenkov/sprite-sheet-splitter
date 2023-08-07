@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="toolbar">
+    <input id="upload_image_btn" type="file" accept="image/jpeg, image/png, image/jpg">
+    <button id="create_track_btn">Add Track</button>
+    <button id="cut_animation_btn">Download</button>
+    <button id="play_animation_btn">Play</button>
+</div>
+<div id="meta_info">
+<!--    <h1 id="mouse_position"></h1>-->
+<!--    <h1 id="mouse_in_image_position"></h1>-->
+<!--    <h1 id="camera_position"></h1>-->
+<!--    <h1 id="camera_offset"></h1>-->
+    <h1 id="scale"></h1>
+    <h1 id="game_loop_performance"></h1>
+</div>
+<div id="tracks">
+    <ul id="tracks_list"></ul>
+</div>
+<div id="create_track_popup">
+    <form id="create_track_form">
+        <label for="track_name_input">Track name:</label>
+        <input id="track_name_input" name="trackName" type="text">
+        <label for="track_update_rate_input">Track update rate:</label>
+        <input id="track_update_rate_input" value="100" step="10" name="trackUpdateRate" type="number">
+        <button type="submit">Create</button>
+    </form>
+</div>
+<div id="log"></div>
+<canvas></canvas>
+<script src="bundle.js"></script>
+</body>
+</html>
